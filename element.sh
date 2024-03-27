@@ -11,3 +11,6 @@ fi
 
 if [[ $1 =~ ^[0-9]+$ ]]; then
   ELEMENT=$($PSQL "SELECT atomic_number, symbol, name, atomic_mass, melting_point_celsius, boiling_point_celsius, type FROM elements FULL JOIN properties USING(atomic_number) FULL JOIN types USING(type_id) WHERE atomic_number = $1;")
+  if [[ -z $ELEMENT ]]; then
+    echo "I could not find that element in the database."
+  else
