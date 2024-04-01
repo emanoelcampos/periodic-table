@@ -1,5 +1,7 @@
 # Periodic Table
 
+*Learning Documentation*
+
 This project is a part of the "Build a Periodic Table Database" course from the Relational Database certification provided by [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/). The main goal of this project was to learn and understand the fundamentals of relational databases, SQL, and bash scripting.
 
 ## Database Creation
